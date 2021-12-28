@@ -1,0 +1,318 @@
+
+h1, h2 {
+    margin-top: 0;
+}
+
+#account {
+    position: absolute;
+    display: inline;
+    text-align: center;
+    top: 19px;
+    right: 17px;
+}
+
+#plasma-description {
+    margin:auto;
+    text-align: center;
+    width: 55%;
+}
+
+#plasma-balances {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.plasma-balance-container {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 39vw;
+}
+
+#your-plasma-container {
+    margin-right: 2vw;
+}
+
+#your-yeti-section {
+    width:80vw;
+    margin: auto;
+}
+
+#available-yeti-images {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.your-yeti {
+    width: 17%;
+    font-size: 1.3vw;
+    margin: 10px;
+}
+
+.your-yeti img {
+    border: 3px solid white;
+}
+
+.yeti-id {
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+#pending-transactions {
+    text-align: center;
+    min-width: 20%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 99999999;
+  }
+  
+.loading-div {
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    height: 5%;
+    background-color: white;
+    border: solid black .3em;
+    color: black;
+    font-size: 1vw;
+    line-height: 1vw;
+    padding: 20px;
+    text-align: center;
+}
+
+.etherscan-link {
+    text-decoration: none;
+}
+
+#error-popup, #status-popup {
+	background-color: rgba(0, 11, 89);
+    z-index: 99999;
+    position:fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 53vw;
+    height: 35vh;
+    border: solid .3em white;
+    border-radius: .2em;
+    text-align: center;
+    box-shadow: 0 0 5000px 5000px rgba(0,0,0,0.88);
+}
+
+#error-popup p, #status-popup p {
+    width: 100%;
+    font-size: 3vw;
+    line-height: 3vw;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+.blinking {
+    animation: blinker 1.6s linear infinite;
+}
+
+.success {
+    background-color: rgb(49, 219, 49) !important;
+}
+
+.failure {
+    background-color: #F72119 !important;
+}
+
+#block-screen, #block-screen-error, #block-screen-status, #block-screen-approval {
+    z-index: 9998;
+    width: 100vw;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
+.hide-on-desktop {
+    display: none !important;
+}
+
+.one {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.0s;
+  }
+  
+  .two {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.2s;
+  }
+  
+  .three {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.3s;
+  }
+  
+  @-webkit-keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+@media screen and (max-width: 991px) {
+
+    .hide-on-desktop {
+        display: block !important;
+    }
+    
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    #mobile-account {
+        width:80%;
+        margin-top: 10px;
+    }
+
+    #plasma-description {
+        margin:auto;
+        text-align: center;
+        width: 95%;
+    }
+
+    .plasma-balance-container {
+        width: 95vw;
+    }
+
+    #your-plasma-container {
+        margin-right: initial;
+    }
+
+    #your-yeti-section {
+        width:95vw;
+        margin: auto;
+    }
+
+    #available-yeti-images {
+        text-align: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        min-height: 0;
+        padding: 5px;
+    }
+
+    .your-yeti {
+        width: 41%;
+    }
+
+    #pending-transactions {
+        min-width: 85%;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    
+      .loading-div {
+        font-size: 4vw;
+        line-height: 4vw;
+      }
+
+    #error-popup, #status-popup {
+        width: 75vw;
+        height: 15vh;
+    }
+
+    #error-popup p, #status-popup p {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+}

@@ -1,0 +1,21 @@
+@media screen and (max-width: 991px) {
+    p {
+        padding: 20px;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 36px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .body-heading {
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+}
+
