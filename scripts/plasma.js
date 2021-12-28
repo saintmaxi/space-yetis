@@ -90,7 +90,7 @@ const getYetiImages = async()=>{
 
     const yourYetis = (await getYetisOwned());
     if (yourYetis.length == 0) {
-        $("#available-yeti-images").append("<br><p style='color:black'>No yetis available...</p>");
+        $("#available-yeti-images").append("<br><p>No yetis available...</p>");
     }
     else {
         for (let i = 0; i < yourYetis.length; i++) {
