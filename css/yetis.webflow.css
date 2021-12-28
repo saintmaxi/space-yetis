@@ -177,12 +177,19 @@ p {
 }
 
 .section.footer {
-	padding-top: 50px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-position: 100% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
 
+.footer .link {
+	transition: transform ease 300ms;
+}
+
+.footer .link:hover {
+  transform: translate(0, -5px);
 }
 
 .lightning{
@@ -314,6 +321,10 @@ p {
 .link {
 	color: #d2f5ff;
 	text-decoration: none
+}
+
+.link:hover {
+    color: #f0fcff;
 }
 
 .section-title{
