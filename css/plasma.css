@@ -49,6 +49,10 @@ h1, h2 {
     width: 39vw;
 }
 
+.plasma-balance-container button {
+    width: 65%;
+}    
+
 .plasma-balance-container .button:hover {
     background-color: #f0fcff;
 }
@@ -261,6 +265,15 @@ h1, h2 {
     .plasma-balance-container {
         width: 95vw;
     }
+
+    .plasma-balance-container h2 {
+        font-size: 3vh;
+    }    
+
+    .plasma-balance-container button {
+        width: 95%;
+        font-size: 2.5vh;
+    }    
 
     #your-plasma-container {
         margin-right: initial;
