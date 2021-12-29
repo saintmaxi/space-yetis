@@ -90,11 +90,12 @@ var loadedYetiImages = false;
 const getYetiImages = async()=>{
     $("#available-yeti-images").empty();
 
-    const yourYetis = (await getYetisOwned());
-    if (yourYetis.length == 0) {
+    const yourYetisCount = await getYetiEnum();
+    if (yourYetisCount == 0) {
         $("#available-yeti-images").append("<br><p>No yetis available...</p>");
     }
     else {
+        const yourYetis = await getYetisOwned();
         for (let i = 0; i < yourYetis.length; i++) {
             let yetiId = yourYetis[i];
             let fakeJSX = `<div id="yeti-${yetiId}" class="your-yeti"><img src="${baseImageURI}${yetiId}.png"><p class="yeti-id">#${yetiId}</p></div>`
