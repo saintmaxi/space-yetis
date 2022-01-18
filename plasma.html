@@ -64,6 +64,14 @@
             <button class=" button" onclick="claimPlasma()">Claim $PLASMA </button>
          </div>
       </div>
+      <div class="hidden" id="migration-section">
+         <div class="container box box2" style="margin-top:0;width:100%;">
+            <h2>MIGRATE $PLASMA</h2>
+            <p id="migration-description"> A contract migration is required to update your pending balances. Migration will happen passively whenever you transfer a Space Yeti, or you can manually migrate using the button below.
+            </p><br>
+            <button class=" button" onclick="migrate()">Migrate $PLASMA </button>
+         </div>
+      </div><br>
       <h1 style="text-align: center;">YOUR CREW</h1>
       <div id="your-yeti-section">
          <div id="available-yeti-images" class="container box3" style="margin-top:0;width:100%;">
@@ -85,6 +93,9 @@
             </a>
             <a href="https://opensea.io/collection/space-yetis-official" target="_blank" class="link w-inline-block">
                <img src="images/opensea.png" loading="lazy" alt="">
+            </a>
+            <a href="https://looksrare.org/collections/0x33a39af0F83E9D46a055e6eEbde3296D26d916F4" target="_blank" class="link w-inline-block">
+               <img src="images/looks-green.png" loading="lazy" alt="">
             </a>
             <a href="https://etherscan.io/address/0x33a39af0f83e9d46a055e6eebde3296d26d916f4" target="_blank" class="link w-inline-block">
                <img src="images/etherscan.png" loading="lazy" alt="">

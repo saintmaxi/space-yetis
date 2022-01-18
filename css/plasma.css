@@ -19,6 +19,14 @@ h1, h2 {
     line-height: 1.4vw;
 }
 
+#migration-description {
+    margin:auto;
+    text-align: center;
+    width: 95%;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+}
+
 #plasma-balances {
     text-align: center;
     display: -webkit-box;
@@ -50,10 +58,14 @@ h1, h2 {
 }
 
 .plasma-balance-container button {
-    width: 65%;
+    width: 75%;
 }    
 
-.plasma-balance-container .button:hover {
+#migration-section button {
+    width: 90%;
+}
+
+.plasma-balance-container .button:hover, #migration-section button:hover {
     background-color: #f0fcff;
 }
 
@@ -61,9 +73,13 @@ h1, h2 {
     margin-right: 2vw;
 }
 
-#your-yeti-section {
+#your-yeti-section, #migration-section {
     width:80vw;
     margin: auto;
+}
+
+#migration-section {
+    text-align: center;
 }
 
 #available-yeti-images {
@@ -191,6 +207,10 @@ h1, h2 {
     display: none !important;
 }
 
+.hidden {
+    display: none;
+}
+
 .one {
     opacity: 0;
     -webkit-animation: dot 1.3s infinite;
@@ -254,7 +274,7 @@ h1, h2 {
         margin-top: 10px;
     }
 
-    #plasma-description {
+    #plasma-description, #migration-description {
         margin:auto;
         text-align: center;
         width: 95%;
@@ -266,11 +286,11 @@ h1, h2 {
         width: 95vw;
     }
 
-    .plasma-balance-container h2 {
+    .plasma-balance-container h2, #migration-section h2 {
         font-size: 3vh;
     }    
 
-    .plasma-balance-container button {
+    .plasma-balance-container button, #migration-section button {
         width: 95%;
         font-size: 2.5vh;
     }    
@@ -279,7 +299,7 @@ h1, h2 {
         margin-right: initial;
     }
 
-    #your-yeti-section {
+    #your-yeti-section, #migration-section {
         width:95vw;
         margin: auto;
     }
