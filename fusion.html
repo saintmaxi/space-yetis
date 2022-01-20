@@ -59,31 +59,51 @@
       </p>
       <br>
       <div id="your-dragon-section" class="container box3">
-         <div id="tributes">
-            <div class="tribute" id="burn-1">
-               <div><img src="./images/bluryeti.png" style="background-color:rgb(170, 169, 169)"><h2>???</h2></div>
+         <br class="hide-on-desktop">
+         <h1 class="hide-on-mobile" id="fusion-header"><span id="fusion-header-text">FUSE-O-TRON 3000</span></h1>
+         <h2 class="hide-on-desktop" id="fusion-header"><span id="fusion-header-text">FUSE-O-TRON 3000</span></h2>
+         <br class="hide-on-desktop">
+         <div id="your-dragon-section-inner">
+            <div id="tributes">
+               <div class="tribute" id="burn-1">
+                  <div><img src="./images/bluryeti.png" style="background-color:rgb(170, 169, 169)"><h2>???</h2></div>
+               </div>
+               <div class="tribute" id="burn-2">
+                  <div><img src="./images/bluryeti.png" style="background-color:rgb(170, 169, 169)"><h2>???</h2></div>
+               </div>
+               <button id="select-tributes-button" class="button" onclick="displayDragonSelect()">SELECT SUBJECTS</button>
             </div>
-            <div class="tribute" id="burn-2">
-               <div><img src="./images/bluryeti.png" style="background-color:rgb(170, 169, 169)"><h2>???</h2></div>
+            <div id="fusion-controls">
+               <div style="position: relative;">
+                  <div id="fusion-display" class="crt">
+                     <h2>YOUR $PLASMA:</h2>
+                     <h2>650</h2>
+                     <h2>$PLASMA COST:</h2>
+                     <h2>650</h2>   
+                  </div>            
+               </div>
+   
+   
+   
+               <!-- <h2>READY TO FUSE?</h2>
+               <p id="fusion-description-2" style="padding-top:.5vw"> </p>
+               <h2>Balance: <span id="your-scale"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span> <img src='./images/plasma.png' width=32 style="margin-bottom:6px;margin-left:5px"></h2>
+               <h2>Cost: 650</span> <img src='./images/plasma.png' width=32 style="margin-bottom:6px;margin-left:5px"></h2> -->
+               <div id="fusion-panel">
+                  <div class="indicator"> 
+                     <p>Plasma</p>
+                     <button>O</button>
+                  </div>
+                  <div class="indicator"> 
+                     <p>Subjects</p>
+                     <button>O</button>
+                  </div>
+                  <button id="burn-button" class="button" onclick="burn()">FUSE</button>
+               </div>
             </div>
-            <button id="select-tributes-button" class="button" onclick="displayDragonSelect()">SELECT SUBJECTS</button>
-         </div>
-         <div id="fusion-controls" style="position: relative;">
-            <div id="fusion-display" class="crt">
-               <h2>YOUR PLASMA:</h2>
-               <h2>650</h2>
-               <h2>PLASMA COST:</h2>
-               <h2>650</h2>   
-            </div>
-
-
-            <!-- <h2>READY TO FUSE?</h2>
-            <p id="fusion-description-2" style="padding-top:.5vw"> </p>
-            <h2>Balance: <span id="your-scale"><span class="one">.</span><span class="two">.</span><span class="three">.</span></span> <img src='./images/plasma.png' width=32 style="margin-bottom:6px;margin-left:5px"></h2>
-            <h2>Cost: 650</span> <img src='./images/plasma.png' width=32 style="margin-bottom:6px;margin-left:5px"></h2> -->
-            <button id="burn-button" class="button" onclick="burn()">FUSE</button>
          </div>
       </div>
+
       <br>
       <h1 style="text-align: center;">YOUR CYBORGS</h1>
       <div id="your-elder-dragon-section" class="container box3">
