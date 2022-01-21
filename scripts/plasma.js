@@ -265,8 +265,8 @@ const importPlasmaToWallet = async() => {
 
 const checkIfMigrated = async() => {
     let userAddress = await getAddress();
-    let newPlasmaPending = await newPlasma.getTotalClaimableTokens(userAddress);
-    if (newPlasmaPending == 0 ) {
+    let newPlasmaYieldUpdated = (await newPlasma.addressToYield(userAddress)).lastUpdatedTime_;
+    if (newPlasmaYieldUpdated == 0 ) {
         migrated = false;
         $("#migration-section").removeClass("hidden");
     }

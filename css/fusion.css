@@ -402,7 +402,7 @@ h2 {
 .subject h2 {
     font-family: "LED";
     margin-top: 10px;
-    background-color: #2f4353;
+    background-color: rgba(14, 77, 14, 0.438);
     border: ridge .3vw rgb(92, 100, 107);
     padding:.5vw;
 }
@@ -792,7 +792,8 @@ h2 {
         height: 12vh;
         font-size: 3vh !important;
         border-width: 1vh;
-        padding: 0 !important;
+        padding: 10px !important;
+        text-align: center;
     }
     
     #fuse-button:hover {
