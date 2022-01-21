@@ -632,6 +632,10 @@ p {
 	min-height: 60vh;
 }
 
+.hide-on-desktop {
+    display: none !important;
+}
+
 
 @media screen and (max-width:1200px) {
 	.grid-header {
@@ -649,6 +653,15 @@ p {
 }
 
 @media screen and (max-width:991px) {
+
+	.hide-on-desktop {
+        display: block !important;
+    }
+
+	.header {
+		padding: 10px !important;
+	}
+
 	#logo {
 		position: initial;
 		display: block;

@@ -49,13 +49,8 @@ h2 {
 #fusion-controls h2 {
     font-size: 2vw;
     line-height: 2.1vw;
-    animation: blinker 4s linear infinite;
 
 }
-
-.blink_me {
-    animation: blinker 1s linear infinite;
-  }
   
   @keyframes blinker {
     12% {
@@ -75,54 +70,20 @@ h2 {
     }
   }
 
-#scale-balances {
-    text-align: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.scale-balance-container {
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 39vw;
-}
-
-.scale-balance-container button {
-    width: 75%;
-}    
-
-#your-scale-container {
-    margin-right: 2vw;
-}
-
-#your-dragon-section, #your-baby-dragon-section, #your-elder-dragon-section{
+#fusion-section, #your-cyborg-section {
     width:80vw;
     margin: auto;
     text-align: center;
     min-height:40vh;
-    background-color: #2f4353;
-    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
 }
 
-#available-dragon-images, #available-elder-images, #available-baby-images {
+#fusion-section {
+    background-color: #2f4353;
+    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+    border: ridge 1vw rgb(92, 100, 107);
+}
+
+#available-cyborg-images {
     text-align: center;
     display: -webkit-box;
     display: -webkit-flex;
@@ -146,11 +107,7 @@ h2 {
     align-items: center;
 }
 
-#genesis-label {
-    margin-bottom: 1vw;
-}
-
-#elder-label, #baby-label {
+#cyborg-label {
     margin: 2vw;
     text-align: center;
 }
@@ -159,17 +116,17 @@ h2 {
     display: none;
 }
 
-.your-dragon {
+.your-cyborg {
     width: 17%;
     font-size: 1.3vw;
     margin: 10px;
 }
 
-.your-dragon img {
+.your-cyborg img {
     margin: 5px;
 }
 
-.dragon-id {
+.cyborg-id {
     text-align: center;
     margin-top: 5px;
 }
@@ -184,25 +141,25 @@ h2 {
     -webkit-animation-delay: 0.0s;
     animation: dot 1.3s infinite;
     animation-delay: 0.0s;
-  }
-  
-  .two {
+}
+
+.two {
     opacity: 0;
     -webkit-animation: dot 1.3s infinite;
     -webkit-animation-delay: 0.2s;
     animation: dot 1.3s infinite;
     animation-delay: 0.2s;
-  }
+}
   
-  .three {
+.three {
     opacity: 0;
     -webkit-animation: dot 1.3s infinite;
     -webkit-animation-delay: 0.3s;
     animation: dot 1.3s infinite;
     animation-delay: 0.3s;
-  }
+}
   
-  @-webkit-keyframes dot {
+@-webkit-keyframes dot {
     0% {
         opacity: 0;
     }
@@ -212,9 +169,9 @@ h2 {
     100% {
         opacity: 1;
     }
-  }
-  
-  @keyframes dot {
+}
+
+@keyframes dot {
     0% {
         opacity: 0;
     }
@@ -224,86 +181,72 @@ h2 {
     100% {
         opacity: 1;
     }
-  }
+}
 
 
 /*fusion control stuff*/
 
 :root {
-    
-    /* Set neon color */
     --neon-text-color: #f40;
     --neon-border-color: #08f;
-  }
-  
-  #fusion-header-text{
-    font-style: italic;
+}
+
+#fusion-header-text{
     color: #fff;
     padding: 1vw;
+    letter-spacing: 4px;
     border: 0.4rem solid #fff;
     border-radius: 2rem;
     text-transform: uppercase;
     animation: flicker2 1.5s infinite alternate; 
     background-color: #2f4353;
-  
-  }
-  
-  #fusion-header-text::-moz-selection {
-    background-color: var(--neon-border-color);
-    color: var(--neon-text-color);
-  }
-  
-  #fusion-header-text::selection {
-    background-color: var(--neon-border-color);
-    color: var(--neon-text-color);
-  }
-  
-  #fusion-header-text:focus {
-    outline: none;
-  }
-  
-  /* Animate neon flicker */
-  @keyframes flicker2 {
-      
-      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        
-          text-shadow:
-              -0.2rem -0.2rem 1rem #fff,
-              0.2rem 0.2rem 1rem #fff,
-              0 0 2rem var(--neon-text-color),
-              0 0 4rem var(--neon-text-color),
-              0 0 6rem var(--neon-text-color),
-              0 0 8rem var(--neon-text-color),
-              0 0 10rem var(--neon-text-color);
-          
-          box-shadow:
-              0 0 .5rem #fff,
-              inset 0 0 .5rem #fff,
-              0 0 2rem var(--neon-border-color),
-              inset 0 0 2rem var(--neon-border-color),
-              0 0 4rem var(--neon-border-color),
-              inset 0 0 4rem var(--neon-border-color);        
-      }
-      
-      20%, 24%, 55% {        
-          text-shadow: none;
-          box-shadow: none;
-      }    
-  }
-
-/* #fusion-header {
-    text-align: center;
     font-family: 'Retro';
-    letter-spacing: 5px;
-    color:red;
 }
 
-#fusion-header-text {
-    background-color: black;
-    padding: 10px;
-} */
+#fusion-header-text::-moz-selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+}
 
-#your-dragon-section-inner {
+#fusion-header-text::selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+}
+
+#fusion-header-text:focus {
+    outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker2 {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    
+        text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+        
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
+
+#fusion-section-inner {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -323,7 +266,7 @@ h2 {
     align-items: center;
 }
 
-#tributes {
+#subjects {
     width: 60%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -347,11 +290,24 @@ h2 {
     align-items: center;
 }
 
-#select-tributes-button, #burn-button {
+#select-subjects-button, #fuse-button {
     width: 82%;
 }
 
-#burn-button {
+#select-subjects-button {
+    font-size: 1.3vw !important;
+    font-family: 'LED';
+    padding: .5vw;
+    background-color: red;
+    border: darkred outset .5vw;
+}
+
+#select-subjects-button:hover {
+    background-color: rgb(255, 45, 45);
+    border: rgb(180, 14, 14) groove .5vw;
+}
+
+#fuse-button {
     background-color: red;
     height: 7vw;
     width: 7vw;
@@ -361,12 +317,9 @@ h2 {
     z-index: 9999;
 }
 
-#burn-button:hover {
+#fuse-button:hover {
     background-color: rgb(255, 45, 45);
-    border: rgb(180, 14, 14) outset .45vw;
-    /* -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-          box-shadow: inset 0px 0px 5px #c1c1c1; */
+    border: rgb(180, 14, 14) groove .45vw;
     font-size: 1.27vw !important;
 }
 
@@ -385,6 +338,7 @@ h2 {
     margin-left: 0;
     margin-right: 0;
     background-color: rgba(14, 77, 14, 0.438);
+    border: groove 1vw rgb(92, 100, 107);
 }
 
 #fusion-panel {
@@ -415,7 +369,9 @@ h2 {
     color: white;
     text-align: center;
     background-color: #2f4353;
-    margin: 8%
+    margin: 8%;
+    padding: .3vw;
+    border: ridge .3vw rgb(92, 100, 107);
 }
 
 #fusion-panel button {
@@ -431,21 +387,36 @@ h2 {
     width: 40%;
 }
 
-.tribute {
+.indicator button {
+    width:2vw;
+    height:2vw;
+    border: ridge .3vw rgb(92, 100, 107);
+}
+
+.subject {
     width: 40% !important;
     margin: 1%;
     text-align: center;
 }
 
-.tribute h2 {
+.subject h2 {
+    font-family: "LED";
     margin-top: 10px;
+    background-color: #2f4353;
+    border: ridge .3vw rgb(92, 100, 107);
+    padding:.5vw;
 }
   
-.tribute img {
-    border: outset 20px rgb(92, 100, 107);
+.subject img {
+    border: groove 1vw rgb(92, 100, 107);
     width: 100%;
     height: 100%;
     /* backdrop-filter: blur(5px); */
+}
+
+.section-title{
+	font-size:  2.3vw;
+	text-align: center;
 }
 
 /* CRT effect code courtesy of http://aleclownes.com/2017/02/01/crt-display.html */
@@ -592,7 +563,7 @@ h2 {
     opacity: 0;
     z-index: 2;
     pointer-events: none;
-    animation: flicker 0.15s infinite;
+    animation: flicker 2s infinite;
   }
   .crt::before {
     content: " ";
@@ -608,7 +579,7 @@ h2 {
     pointer-events: none;
   }
   .crt {
-    animation: textShadow 1.6s infinite;
+    animation: textShadow 20s infinite;
   }
 
 /* end CRT effect */
@@ -621,7 +592,7 @@ h2 {
     border-color: red !important;
 }
 
-#dragon-select {
+#yeti-select {
 	background-color: rgba(95, 92, 92);
     border: .2em solid white;
     z-index: 10000;
@@ -634,11 +605,10 @@ h2 {
     transform: translate(-50%, 0);
     width: 90vw;
     height: 85vh;
-    overflow-y: scroll;
     box-shadow: 0 0 5000px 5000px rgba(0,0,0,0.88);
-  }
+}
 
-  #available-dragons {
+#available-yetis {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -659,39 +629,42 @@ h2 {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-  }
+    max-height: 70%;
+    padding-bottom: 1%;
+    overflow-y: scroll;
+}
 
-  #dragon-select #close {
+#yeti-select #close {
     padding: 1.1vw;
-  }
+}
 
-  .dragon-div {
+.yeti-div {
     cursor: pointer !important;
     width: 17% !important;
     margin: 1%;
     text-align: center;
-  }
+}
 
-  .dragon-div h2 {
+.yeti-div h2 {
     margin-top: 10px;
-  }
+}
   
-  .dragon-div:hover {
+.yeti-div:hover {
     cursor: pointer !important;
-  }
+}
   
-  .dragon-div img {
+.yeti-div img {
     border: solid 5px white;
     width: 100%;
     height: 100%;
-  }
+}
 
-  #close-div {
+#close-div {
     width: 100%;
     position: sticky;
     top: 0;
     background-color: black;
-  }
+}
 
 
 #close {
@@ -705,34 +678,36 @@ h2 {
     font-size: 3vw;
     color: red;
     z-index: 10001;
-  }
+}
 
-  #selected-dragons-big {
+#selected-yetis-big {
+    line-height: 2vw;
     width: 100%;
     text-align: center;
-    padding: 1vw;
-  }
+}
 
-  #bottom-div {
+#bottom-div {
     width: 100%;
-    position: sticky;
+    position: absolute;
     bottom: 0;
 	background-color: rgb(71, 70, 70);
     border-top: solid .2em white;
     font-size: 2vw;
+    padding: 1%;
     text-align: center;
-    padding: 20px;
-  }
+    height:20%;
+}
 
-  #confirm {
+#confirm {
     width: 15%;
-    padding: 15px;
+    padding: 5px;
     font-size: 1.5vw;
-  }
+    height:40%;
+}
 
   /* end fusion control stuff*/
 
-  #error-popup, #status-popup {
+#error-popup, #status-popup {
 	background-color: rgba(0,0,0);
     z-index: 99999;
     position:fixed;
@@ -759,38 +734,91 @@ h2 {
     text-align: center;
 }
 
+/* status button css */
+
+.condition-met {
+    background-color: rgb(49, 219, 49);
+    color: rgb(49, 219, 49);
+    animation: blinker 1.6s linear infinite;
+}
+
+.condition-failed {
+    background-color: #f80800;
+    color: #f80800;
+    animation: blinker 1.6s linear infinite;
+}
+
 @media screen and (max-width: 991px) {
 
-    .tribute {
+    .section-title {
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    .subject {
         width: 44% !important;
         margin: 2%;
         text-align: center;
     }
 
-    #select-tributes-button {
+    #select-subjects-button {
         width: 93%;
     }
 
-    #burn-button {
-        width: 20vh;
-        height: 20vh;
+    #fusion-panel p {
+        font-size: 2.1vh;
+        line-height: 2.1vh;
+        padding: 10px;
+        border-width: .3vh;
     }
 
-    #tributes, #fusion-controls {
+    .indicator button {
+        font-size: 2.3vh;
+        line-height: 2.3vh;
+        width: 2.3vh;
+        height: 2.3vh;
+        padding: 10px;
+        border-width: .3vh;
+    }
+
+    #select-subjects-button {
+        font-size: 3vh !important;
+        padding:5px;
+        border-width: 1vh;
+    }
+
+    #fuse-button {
+        width: 12vh;
+        height: 12vh;
+        font-size: 3vh !important;
+        border-width: 1vh;
+    }
+    
+    #fuse-button:hover {
+        border-width: .85vh;
+        font-size: 2.7vh !important;
+    }
+
+    h3 {
+        font-size: 2.7vh;
+    }
+
+    #subjects, #fusion-controls {
         width: 100%;
     }
 
-    #tributes {
-        margin-bottom: 20px;
+    #subjects {
+        margin-bottom: 10px;
     }
 
     #confirm {
         width: 100%;
+        height: initial;
         padding: 10px;
         font-size: 3vh;
       }
 
-    #selected-dragons-big {
+    #selected-yetis-big {
         width: 100%;
         position: sticky;
         bottom: 0;
@@ -800,25 +828,25 @@ h2 {
     }
 
     #bottom-div {
-        padding: 10px;
+        height: 15%;
     }
 
-    .dragon-div {
+    .yeti-div {
         width: 40% !important;
         margin: 2.5%;
-      }
+    }
 
-      #close {
+    #close {
         padding: 2vh;
         font-size: 4vh;
-      }
+    }
 
-    #genesis-label, #elder-label, #baby-label {
+    #yeti-label {
         font-size: 1.9vh !important;
         line-height: 2.7vh !important;
     }
 
-    .no-dragons-msg {
+    .no-cyborgs-msg {
         font-size: 1.5vh !important;
     }
 
@@ -858,30 +886,33 @@ h2 {
         line-height: 1.7vh !important;
     }
 
-    .scale-balance-container {
-        width: 95vw;
+    #fusion-header-text {
+        padding: 1vh;
     }
 
-    .scale-balance-container h2 {
-        font-size: 3vh;
-    }    
-
-    .scale-balance-container button {
-        width: 95%;
-        font-size: 2.5vh;
-    }    
-
-    #your-scale-container {
-        margin-right: initial;
-    }
-
-    #your-dragon-section, #your-baby-dragon-section, #your-elder-dragon-section {
+    #fusion-section, #your-cyborg-section {
         width:95vw;
         min-height: 0;
         margin: auto;
     }
 
-    #available-dragon-images, #available-elder-images, #available-baby-images {
+    .subject h2 {
+        border-width: .5vh;
+    }
+
+    #fusion-section {
+        border-width: 2vh;
+    }
+
+    #fusion-display {
+        border-width: 1vh;
+    }
+
+    .subject img {
+        border-width: 1vh;
+    }
+
+    #available-cyborg-images {
         width: 100%;
         text-align: center;
         display: -webkit-box;
@@ -910,7 +941,7 @@ h2 {
         padding: 20px;
     }
 
-    .your-dragon {
+    .your-cyborg {
         width: 41%;
     }
 
@@ -922,10 +953,10 @@ h2 {
         transform: translate(-50%, 0);
       }
     
-      .loading-div {
+    .loading-div {
         font-size: 4vw;
         line-height: 4vw;
-      }
+    }
 
     #error-popup, #status-popup {
         width: 75vw;
