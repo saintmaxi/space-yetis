@@ -890,6 +890,9 @@ h2 {
 
     #fusion-header-text {
         padding: 1vh;
+        font-size: 2.3vh !important;
+        line-height: 2.3vh !important;
+        letter-spacing: 2px;
     }
 
     #fusion-section, #your-cyborg-section {
