@@ -593,7 +593,7 @@ h2 {
 }
 
 #yeti-select {
-	background-color: rgba(95, 92, 92);
+    background-color: black;
     border: .2em solid white;
     z-index: 10000;
     color:white;
@@ -690,7 +690,7 @@ h2 {
     width: 100%;
     position: absolute;
     bottom: 0;
-	background-color: rgb(71, 70, 70);
+	background-color: black;
     border-top: solid .2em white;
     font-size: 2vw;
     padding: 1%;
