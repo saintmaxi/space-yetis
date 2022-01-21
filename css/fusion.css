@@ -792,6 +792,7 @@ h2 {
         height: 12vh;
         font-size: 3vh !important;
         border-width: 1vh;
+        padding: 0 !important;
     }
     
     #fuse-button:hover {
