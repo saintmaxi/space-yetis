@@ -787,6 +787,10 @@ h2 {
         border-width: 1vh;
     }
 
+    #select-subjects-button {
+        border-width: 1vh;
+    }
+
     #fuse-button {
         width: 12vh;
         height: 12vh;
