@@ -787,7 +787,7 @@ h2 {
         border-width: 1vh;
     }
 
-    #select-subjects-button {
+    #select-subjects-button:hover {
         border-width: 1vh;
     }
 
