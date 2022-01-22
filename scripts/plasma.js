@@ -122,7 +122,7 @@ const migrate = async() => {
             });
         }
         catch (error) {
-            await displayErrorMessage("An error occurred. See window alert or console for more details...")
+            await displayErrorMessage("An error occurred. See console output or window alert...")
             console.log(error);
             window.alert(error);
         }

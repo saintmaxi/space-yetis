@@ -108,14 +108,9 @@ const fuse = async() => {
             });
         }
         catch (error) {
-            if (!((error.message).contains("User denied"))) {  //TODO-- error catch
-                await displayErrorMessage("An error occurred! See console output.");
-            }
-            else {
-                await displayErrorMessage("An error occurred! See console output or window alert...");
-                window.alert(error);
-                console.log(error);
-            }
+            await displayErrorMessage("An error occurred! See console output or window alert...");
+            window.alert(error);
+            console.log(error);
         }
     }
 }
