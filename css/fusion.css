@@ -820,8 +820,8 @@ h2 {
     #confirm {
         width: 100%;
         height: initial;
-        padding: 10px;
-        font-size: 3vh;
+        padding: 20px;
+        font-size: 3vh !important;
       }
 
     #selected-yetis-big {
@@ -829,12 +829,13 @@ h2 {
         position: sticky;
         bottom: 0;
         border-top: none;
-        font-size: 2vh;
+        font-size: 4vh;
+        line-height: 4vh;
         padding: 10px;
     }
 
     #bottom-div {
-        height: 15%;
+        height: 20%;
     }
 
     .yeti-div {
