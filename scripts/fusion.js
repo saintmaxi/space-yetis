@@ -103,7 +103,7 @@ const fuse = async() => {
         try {
             const id1 = selected[0];
             const id2 = selected[1];
-            await dragons.breed(id1, id2).then( async(tx_) => {   //TODO-- cyborg fuse here
+            await cyborgs.fuse(id1, id2).then( async(tx_) => {   //TODO-- cyborg fuse here
                 await waitForTransaction(tx_);
             });
         }
@@ -336,6 +336,7 @@ function startLoading(tx) {
     const loadingDiv = `<a href="${etherscanLink}" class="etherscan-link" id="etherscan-link-${txHash}" target="_blank" rel="noopener noreferrer"><div class="loading-div" id="loading-div-${txHash}">PROCESSING<span class="one">.</span><span class="two">.</span><span class="three">.</span>​<br>CLICK FOR ETHERSCAN</div></a><br>`;
     $("#pending-transactions").append(loadingDiv);
     pendingTransactions.add(tx);
+    displayLoading();
 }
 
 async function endLoading(tx, txStatus) {
@@ -352,6 +353,8 @@ async function endLoading(tx, txStatus) {
     $(`#loading-div-${txHash}`).append(`TRANSACTION ${status}.<br>VIEW ON ETHERSCAN.`);
     await sleep(7000);
     $(`#etherscan-link-${txHash}`).remove();
+    $("#loading-popup").remove();
+    $("#block-screen-loading").remove();
     pendingTransactions.delete(tx);
     if (pendingTransactions.size == 0) {
         await updateClaimingInfo();

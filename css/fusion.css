@@ -314,7 +314,6 @@ h2 {
     border-radius: 50%;
     border: darkred outset .5vw;
     font-size: 1.3vw !important;
-    z-index: 9999;
 }
 
 #fuse-button:hover {
@@ -722,6 +721,21 @@ h2 {
     box-shadow: 0 0 5000px 5000px rgba(0,0,0,0.88);
 }
 
+#loading-popup {
+    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+    border: ridge 1vw rgb(92, 100, 107);
+    padding:5vw;
+    z-index: 99999;
+    position:fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33vw;
+    border-radius: .2em;
+    text-align: center;
+    box-shadow: 0 0 5000px 5000px rgba(0,0,0,0.88);
+}
+
 #error-popup p, #status-popup p {
     width: 100%;
     font-size: 3vw;
@@ -971,6 +985,11 @@ h2 {
     #error-popup, #status-popup {
         width: 75vw;
         height: 15vh;
+    }
+
+    #loading-popup {
+        width: 75vw;
+        border-width: 2vh;
     }
 
     #error-popup p, #status-popup p {

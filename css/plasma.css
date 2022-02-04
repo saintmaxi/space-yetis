@@ -195,7 +195,7 @@ h1, h2 {
     background-color: #F72119 !important;
 }
 
-#block-screen, #block-screen-error, #block-screen-status, #block-screen-approval {
+#block-screen, #block-screen-error, #block-screen-status, #block-screen-approval, #block-screen-loading {
     z-index: 9998;
     width: 100vw;
     opacity: 0;
