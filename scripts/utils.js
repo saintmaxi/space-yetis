@@ -14,7 +14,7 @@ async function displayErrorMessage(message, timed=true, time=2500) {
 
 async function displayLoading() {
     if (!($("#loading-popup").length)) {
-        let fakeJSX = `<img id="loading-popup" src="../images/cyborg-loading.gif">`;
+        let fakeJSX = `<img id="loading-popup" src="./images/cyborg-loading.gif">`;
         $("body").append(fakeJSX);
         let height = $(document).height();
         $("body").append(`<div id='block-screen-loading' style="height:${height}px"></div>`);
