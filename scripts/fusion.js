@@ -205,7 +205,7 @@ function incrementClaim() {
     let newClaim = currentClaim + 1;
     let newPrice = 650 * newClaim;
     if (newPrice > plasmaBalanceGlobal) {
-        displayErrorMessage(`Insufficient plasma for ${newClaim} fusions!`)
+        displayErrorMessage(`Insufficient $PLASMA for ${newClaim} fusions!`)
     }
     else {
         $("#number-to-mint").text(newClaim);
