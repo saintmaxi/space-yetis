@@ -5,6 +5,11 @@
 }
 
 @font-face {  
+	font-family: 'Helvetica Bold';
+	src: URL('../css/Helvetica-Bold-Font.ttf') format('truetype');
+}  
+
+@font-face {  
 	font-family: 'Retro';
 	src: URL('../css/strasua.ttf') format('truetype');
 }
@@ -75,12 +80,17 @@ h2 {
     margin: auto;
     text-align: center;
     min-height:40vh;
+    padding: 30px;
 }
 
 #fusion-section {
     background-color: #2f4353;
     background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
     border: ridge 1vw rgb(92, 100, 107);
+}
+
+#fusion-section button {
+    font-family: 'Helvetica Bold';
 }
 
 #available-cyborg-images {
@@ -124,6 +134,7 @@ h2 {
 
 .your-cyborg img {
     margin: 5px;
+    border: 3px solid white;
 }
 
 .cyborg-id {
@@ -341,9 +352,42 @@ h2 {
     padding: 1.3vw;
 }
 
+h3 {
+    margin: .1vw;
+    font-size: 1.5vw;
+    line-height: 1.9vw;
+}
+
+.increment-button {
+    background-color: red !important;
+    color: black !important;
+    height: 4vw;
+    width: 4vw;
+    font-family: 'Helvetica Bold';
+    border-radius: 50%;
+    border: darkred outset .5vw;
+	font-size:2vw !important;
+	line-height:2vw !important;
+}
+
+.increment-button:hover {
+	cursor: pointer;
+    background-color: rgb(255, 45, 45);
+    border: rgb(180, 14, 14) groove .45vw;
+    font-size: 1.8vw !important;
+}
+
+#amount-controller {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#mint-plus {
+    margin-left: 2%;
+}
 
 #fusion-display {
-    border:3px solid white;
     padding: 1vw;
     margin: 1vw;
     margin-left: 0;
@@ -375,7 +419,7 @@ h2 {
     align-items: center;
 }
 
-#fusion-panel p {
+.indicator p {
     font-size: 1vw;
     color: white;
     text-align: center;
@@ -776,6 +820,37 @@ h2 {
 
 @media screen and (max-width: 991px) {
 
+    h3 {
+		font-size:  2.4vh !important;
+		line-height:  2.9vh !important;
+	}
+
+
+    .increment-button {
+        height: 6vh;
+        width: 6vh;
+        border-width: .5vh;
+        font-size:4vh !important;
+        line-height:4vh !important;
+    }
+
+    .increment-button:hover {
+        cursor: pointer;
+        border-width: .85vh;
+        font-size: 2.6vh !important;
+    }
+
+    #amount-controller {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mint-plus {
+        margin-left: 2%;
+    }
+
     .section-title {
         font-size: 4vh;
         text-align: center;
@@ -791,7 +866,7 @@ h2 {
         width: 93%;
     }
 
-    #fusion-panel p {
+    .indicator p {
         font-size: 2.1vh;
         line-height: 2.1vh;
         padding: 10px;
@@ -808,7 +883,7 @@ h2 {
     }
 
     #select-subjects-button {
-        font-size: 3vh !important;
+        font-size: 2.5vh !important;
         padding:5px;
         border-width: 1vh;
     }
@@ -820,7 +895,7 @@ h2 {
     #fuse-button {
         width: 12vh;
         height: 12vh;
-        font-size: 3vh !important;
+        font-size: 2.5vh !important;
         border-width: 1vh;
         padding: 10px !important;
         text-align: center;

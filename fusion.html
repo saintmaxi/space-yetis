@@ -97,11 +97,20 @@
             <div id="fusion-controls">
                <div style="position: relative;">
                   <div id="fusion-display" class="crt">
-                     <h2>YOUR $PLASMA:</h2>
-                     <h2 id="your-plasma">-</h2>
-                     <h2>$PLASMA COST:</h2>
-                     <h2>650</h2>   
+                     <h3>YOUR $PLASMA:</h3>
+                     <h3 id="your-plasma">-</h3>
+                     <h3>$PLASMA COST:</h3>
+                     <h3 id="current-cost">650</h3>
+                     <h3>NUMBER TO FUSE:</h3>
+                     <h3 id="number-to-mint">1</h3> 
                   </div>            
+               </div>
+               <div id="amount-controller" style="text-align: center;">
+                  <div class="indicator"> 
+                     <p>FUSE AMOUNT</p>
+                  </div>
+                  <button class="increment-button" id="mint-minus" onclick="decrementClaim();updatePrice();">-</button> 
+                  <button class="increment-button" id="mint-plus" onclick="incrementClaim();updatePrice();">+</button><br>
                </div>
                <div id="fusion-panel">
                   <div class="indicator"> 
@@ -117,7 +126,6 @@
             </div>
          </div>
       </div>
-
       <br>
       <h1 style="text-align: center;">YOUR CYBORGS</h1>
       <div id="your-cyborg-section" class="container box3">
