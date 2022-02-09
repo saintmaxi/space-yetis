@@ -829,9 +829,9 @@ h3 {
     .increment-button {
         /* height: 6vh !important;
         width: 6vh !important; */
-        height: 60px !important;
-        width: 60px !important;
-        border-width: .5vh;
+        height: 70px !important;
+        width: 70px !important;
+        border-width: 1vh;
         font-size:3.5vh !important;
         line-height:3.5vh !important;
     }
