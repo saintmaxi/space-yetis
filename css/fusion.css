@@ -869,6 +869,10 @@ h3 {
         text-align: center;
     }
 
+    #available-yetis {
+        padding-bottom: 8%;
+    }
+
     #select-subjects-button {
         width: 93%;
     }
