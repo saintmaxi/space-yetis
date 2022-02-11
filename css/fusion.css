@@ -873,6 +873,10 @@ h3 {
         padding-bottom: 8%;
     }
 
+    #yeti-select h1 {
+        margin-bottom: 0 !important;
+    }
+
     #select-subjects-button {
         width: 93%;
     }
