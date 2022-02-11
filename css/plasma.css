@@ -356,5 +356,6 @@ h1, h2 {
     #error-popup p, #status-popup p {
         font-size: 4vw;
         line-height: 4vw;
+        width: 80%;
     }
 }
