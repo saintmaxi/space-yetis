@@ -689,6 +689,11 @@ h3 {
     overflow-y: scroll;
 }
 
+#yeti-select {
+    height: 95vh;
+    top: 2.5vh;
+}
+
 #yeti-select #close {
     padding: 1.1vw;
 }
@@ -929,7 +934,7 @@ h3 {
     #confirm {
         width: 100%;
         height: initial;
-        padding: 20px;
+        padding: 15px;
         font-size: 3vh !important;
       }
 
