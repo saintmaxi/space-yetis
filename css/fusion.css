@@ -825,6 +825,10 @@ h3 {
 
 @media screen and (max-width: 991px) {
 
+    #cyborg-label {
+        font-size: 25px !important;
+    }
+
     h3 {
 		font-size:  2.4vh !important;
 		line-height:  2.9vh !important;
