@@ -178,7 +178,7 @@ const getCyborgImages = async()=>{
     const yourCyborgsCount = await getCyborgsEnum();
     $("#num-cyborgs").html(`(${Number(yourCyborgsCount)})`);
     if (yourCyborgsCount == 0) {
-        $("#available-cyborg-images").append("<br><p class='no-cyborgs-msg'>No Cyborgs available...</p>");
+        $("#available-cyborg-images").append("<br><p>No cyborgs available...</p>");
     }
     else {
         const yourCyborgs = await getCyborgsOwned();
