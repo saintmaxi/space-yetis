@@ -21,7 +21,7 @@
 
 // const baseYetiImageURI = "https://api.nonfungiblecdn.com/spaceyetis/images/";
 
-// const baseCyborgImageURI = "http://ipfs.io/ipfs/bafybeibalsiagshy4nrqegaxwlu4xcvhn6szjzx6grcidnh2jp6anzbkwm/";
+// const baseCyborgImageURI = "http://ipfs.io/ipfs/Qmb78aV6NLxcfmsb8zJ9kUopTDFPrNkSY3xuTroby6bxP2/";
 
 // const correctChain = 1;
 
@@ -48,14 +48,14 @@ const etherscanBase = `https://rinkeby.etherscan.io/tx/`;
 
 const baseYetiImageURI = "https://api.nonfungiblecdn.com/spaceyetis/images/";
 
-const baseCyborgImageURI = "http://ipfs.io/ipfs/bafybeibalsiagshy4nrqegaxwlu4xcvhn6szjzx6grcidnh2jp6anzbkwm/";
+const baseCyborgImageURI = "http://ipfs.io/ipfs/Qmb78aV6NLxcfmsb8zJ9kUopTDFPrNkSY3xuTroby6bxP2/";
 
 const correctChain = 4;
 
 /*********************************END CONFIG************************************/
 
 if (window.ethereum == undefined) {
-    displayErrorMessage('Use a web3 enabled browser with MetaMask or the MetaMask mobile app to fuse Cyborgs!');
+    displayErrorMessage('Use a web3 enabled browser or mobile app like Metamask to fuse Cyborgs!');
     $("#available-cyborg-images").empty();
     $("#available-cyborg-images").append("<br><p>No cyborgs available...</p>");
 }

@@ -26,7 +26,7 @@ const correctChain = 1;
 /*********************************END CONFIG************************************/
 
 if (window.ethereum == undefined) {
-    displayErrorMessage('Use a web3 enabled browser with MetaMask or the MetaMask mobile app to claim $PLASMA!');
+    displayErrorMessage('Use a web3 enabled browser or mobile app like Metamask to claim $PLASMA!');
     $("#available-yeti-images").empty();
     $("#available-yeti-images").append("<br><p>No yetis available...</p>");
 }
