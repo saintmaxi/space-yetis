@@ -21,7 +21,7 @@
 
 // const baseYetiImageURI = "https://api.nonfungiblecdn.com/spaceyetis/images/";
 
-// const baseCyborgImageURI = "http://ipfs.io/ipfs/Qmb78aV6NLxcfmsb8zJ9kUopTDFPrNkSY3xuTroby6bxP2/";
+// const baseCyborgImageURI = "";
 
 // const correctChain = 1;
 
@@ -48,7 +48,7 @@ const etherscanBase = `https://rinkeby.etherscan.io/tx/`;
 
 const baseYetiImageURI = "https://api.nonfungiblecdn.com/spaceyetis/images/";
 
-const baseCyborgImageURI = "http://ipfs.io/ipfs/Qmb78aV6NLxcfmsb8zJ9kUopTDFPrNkSY3xuTroby6bxP2/";
+const baseCyborgImageURI = "";
 
 const correctChain = 4;
 
@@ -184,8 +184,7 @@ const getCyborgImages = async()=>{
         const yourCyborgs = await getCyborgsOwned();
         for (let i = 0; i < yourCyborgs.length; i++) {
             let cyborgId = yourCyborgs[i];
-            let fakeJSX = `<div id="cyborg-${cyborgId}" class="your-cyborg"><img src="${baseCyborgImageURI}${cyborgId}.png"><p class="cyborg-id">#${cyborgId}</p></div>`
-            // let fakeJSX = `<div id="cyborg-${cyborgId}" class="your-cyborg"><img src="${baseCyborgImageURI}${Number(cyborgId)+3333}.png"><p class="cyborg-id">#${cyborgId}</p></div>` //uncomment if offset remains
+            let fakeJSX = `<div id="cyborg-${cyborgId}" class="your-cyborg"><img src="./images/cyborg-loading.gif"><p class="cyborg-id">#${cyborgId}</p></div>` // hidden
             $("#available-cyborg-images").append(fakeJSX);
         };
     }
