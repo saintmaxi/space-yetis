@@ -391,7 +391,7 @@ const waitForTransaction = async(tx_) => {
 };
 
 // Resuming UI display, refreshing market for pending txs across pages
-var pendingTransactions = localStorage.getItem("YetisPendingTxs");
+var pendingTransactions = localStorage.getItem("CyborgsPendingTxs");
 
 if (!pendingTransactions) {
     pendingTransactions = new Set();
@@ -404,11 +404,11 @@ else {
     for (let i =0; i < pendingTxArray.length; i++) {
         waitForTransaction(pendingTxArray[i]);
     }
-    localStorage.removeItem("YetisPendingTxs");
+    localStorage.removeItem("CyborgsPendingTxs");
 }
 
 function cachePendingTransactions() {
-    localStorage.setItem("YetisPendingTxs", JSON.stringify(Array.from(pendingTransactions)));
+    localStorage.setItem("CyborgsPendingTxs", JSON.stringify(Array.from(pendingTransactions)));
 }
 
 function startLoading(tx) {
