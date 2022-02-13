@@ -332,6 +332,13 @@ p {
 	line-height:  64px;
 	text-align: center;
 }
+#clear-button {
+	margin-bottom: 10px;
+}
+
+#clear-button:hover {
+	background-color: #f0fcff;
+}
 
 .grid-3 {
 	justify-items: center;
@@ -653,6 +660,12 @@ p {
 }
 
 @media screen and (max-width:991px) {
+
+	#clear-button {
+		width: 95%;
+		font-size: 2.5vh !important;
+		padding: 15px;
+	}
 
 	.hide-on-desktop {
         display: block !important;

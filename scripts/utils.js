@@ -24,3 +24,10 @@ async function displayLoading() {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+function clearPendingTxs() {
+    localStorage.removeItem("YetisPendingTxs");
+    localStorage.removeItem("CyborgsPendingTxs");
+    pendingTransactions.clear();
+    location.reload();
+};
