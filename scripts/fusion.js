@@ -187,7 +187,7 @@ const getCyborgImages = async()=>{
         const yourCyborgs = await getCyborgsOwned();
         for (let i = 0; i < yourCyborgs.length; i++) {
             let cyborgId = yourCyborgs[i];
-            let fakeJSX = `<div id="cyborg-${cyborgId}" class="your-cyborg"><img src="${baseCyborgImageURI}${cyborgId}.png"><p class="cyborg-id">#${cyborgId}</p></div>` //revealed
+            let fakeJSX = `<div id="cyborg-${cyborgId}" class="your-cyborg"><img src="${baseCyborgImageURI}${cyborgId}"><p class="cyborg-id">#${cyborgId}</p></div>` //revealed
             // let fakeJSX = `<div id="cyborg-${cyborgId}" class="your-cyborg"><img src="./images/cyborg-loading.gif"><p class="cyborg-id">#${cyborgId}</p></div>` // hidden
             $("#available-cyborg-images").append(fakeJSX);
         };
